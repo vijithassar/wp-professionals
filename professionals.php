@@ -130,7 +130,7 @@ class Professionals {
 		if ($links):
 	    $html .= '<div class="links">';
 			$html .= '<h5>Links</h5>';
-	    if (function_exists(wpmarkdown_markdown_to_html)):
+	    if (function_exists('wpmarkdown_markdown_to_html')):
 	      $links_html = wpmarkdown_markdown_to_html($links);
 	      $html .= $links_html;
 	    else:
